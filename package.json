@@ -1,0 +1,45 @@
+{
+  "name": "edus-designs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EDUS Media — Exceptional Designs for Us. Community-focused web design studio marketing site.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "audit:export": "node scripts/audit-pages.mjs",
+    "audit:contrast": "node scripts/audit-contrast.mjs",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-hook-form": "^7.65.0",
+    "zod": "^4.1.12",
+    "@hookform/resolvers": "^5.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "16.3.8",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

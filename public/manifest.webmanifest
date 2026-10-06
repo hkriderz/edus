@@ -1,0 +1,17 @@
+{
+  "name": "EDUS Designs — Exceptional Designs for Us",
+  "short_name": "EDUS Designs",
+  "description": "A community-focused web design studio delivering studio-quality websites at affordable, published prices with guaranteed support.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3ec",
+  "theme_color": "#191511",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}

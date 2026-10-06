@@ -1,6 +1,40 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# build output
+.next/
+out/
+build/
+dist/
+
+# test output
+coverage/
+
+# env — never commit real credentials
+.env
+.env.*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# os / editor noise
 .DS_Store
 Thumbs.db
 desktop.ini
 *.log
-.env
-.env.*
+npm-debug.log*
+.vercel
+
+# Raw previous-site export. Contains real contact details and a GTM id.
+# The sanitized copy lives in public/archive/.
+old/
+
+# Local review screenshots
+.tmp-review/
+
+# Hydrated mains captured from the raw export. Still contain contact details.
+tmp/

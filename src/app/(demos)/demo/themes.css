@@ -1,0 +1,147 @@
+/* ---------------------------------------------------------------------------
+   Per-demo theme tokens.
+
+   Each block re-points the same semantic variables the marketing site uses
+   (--surface, --ink, --accent and friends). Because globals.css maps those into
+   Tailwind via `@theme inline`, every existing utility — bg-surface, text-ink,
+   border-line, text-accent — resolves to the demo's own palette with no new
+   class names required.
+
+   Declaring them on the demo wrapper rather than :root also makes demos immune
+   to the marketing site's dark-mode toggle, which is correct: a client site has
+   one fixed identity.
+   --------------------------------------------------------------------------- */
+
+[data-demo] {
+  /* Demos set their own grain weight; several want none at all. */
+  --grain-opacity: 0;
+}
+
+/* --- Verde & Vine — plant shop & garden café ------------------------------ */
+[data-demo="verde-and-vine"] {
+  color-scheme: light;
+
+  --surface: oklch(95.5% 0.025 92);
+  --surface-raised: oklch(98% 0.016 92);
+  --surface-sunken: oklch(91.5% 0.034 94);
+  --surface-invert: oklch(32% 0.062 150);
+
+  --ink: oklch(26% 0.05 150);
+  --ink-muted: oklch(42% 0.045 150);
+  --ink-faint: oklch(50% 0.04 150);
+  --ink-invert: oklch(95.5% 0.025 92);
+
+  --line: oklch(32% 0.062 150 / 0.2);
+  --line-strong: oklch(32% 0.062 150 / 0.58);
+
+  --accent: oklch(51.5% 0.14 46);
+  --accent-hover: oklch(45% 0.14 44);
+  --accent-contrast: oklch(97% 0.02 92);
+  --accent-soft: oklch(51.5% 0.14 46 / 0.1);
+
+  --moss: oklch(52% 0.085 143);
+  --grain-opacity: 0.05;
+}
+
+/* --- Northside Barbell — strength & conditioning -------------------------- */
+[data-demo="northside-barbell"] {
+  color-scheme: dark;
+
+  --surface: oklch(16% 0.004 250);
+  --surface-raised: oklch(21.5% 0.005 250);
+  --surface-sunken: oklch(12% 0.004 250);
+  --surface-invert: oklch(96% 0.002 250);
+
+  --ink: oklch(96% 0.002 250);
+  --ink-muted: oklch(72% 0.006 250);
+  --ink-faint: oklch(59% 0.006 250);
+  --ink-invert: oklch(16% 0.004 250);
+
+  --line: oklch(96% 0.002 250 / 0.22);
+  --line-strong: oklch(96% 0.002 250 / 0.6);
+
+  /* Lightened from the brand orange so body text on the dark field clears 4.5:1. */
+  --accent: oklch(76% 0.168 62);
+  --accent-hover: oklch(82% 0.15 66);
+  --accent-contrast: oklch(14% 0.004 250);
+  --accent-soft: oklch(76% 0.168 62 / 0.14);
+}
+
+/* --- Rosalía — modern Mexican restaurant --------------------------------- */
+[data-demo="rosalia"] {
+  color-scheme: light;
+
+  --surface: oklch(94% 0.016 80);
+  --surface-raised: oklch(97.5% 0.01 80);
+  --surface-sunken: oklch(90% 0.024 76);
+  --surface-invert: oklch(22% 0.028 30);
+
+  --ink: oklch(22% 0.028 30);
+  --ink-muted: oklch(40% 0.03 28);
+  --ink-faint: oklch(50% 0.03 28);
+  --ink-invert: oklch(94% 0.016 80);
+
+  --line: oklch(22% 0.028 30 / 0.2);
+  --line-strong: oklch(22% 0.028 30 / 0.52);
+
+  --accent: oklch(44% 0.165 22);
+  --accent-hover: oklch(38% 0.16 22);
+  --accent-contrast: oklch(96% 0.012 80);
+  --accent-soft: oklch(44% 0.165 22 / 0.09);
+
+  --clay: oklch(64% 0.11 44);
+  --grain-opacity: 0.055;
+}
+
+/* --- Meridian Dental — family practice ----------------------------------- */
+[data-demo="meridian-dental"] {
+  color-scheme: light;
+
+  --surface: oklch(99% 0.004 215);
+  --surface-raised: oklch(100% 0 0);
+  --surface-sunken: oklch(96.5% 0.012 215);
+  --surface-invert: oklch(31% 0.045 232);
+
+  /* Slate rather than black: softer, and still 12:1 on the near-white field. */
+  --ink: oklch(30% 0.03 240);
+  --ink-muted: oklch(45% 0.026 238);
+  --ink-faint: oklch(53% 0.022 236);
+  --ink-invert: oklch(99% 0.004 215);
+
+  --line: oklch(30% 0.03 240 / 0.14);
+  --line-strong: oklch(30% 0.03 240 / 0.55);
+
+  /* Darkened from the brand cyan to clear 4.5:1 on white for text use. */
+  --accent: oklch(48% 0.102 230);
+  --accent-hover: oklch(42% 0.1 230);
+  --accent-contrast: oklch(99% 0.004 215);
+  --accent-soft: oklch(48% 0.102 230 / 0.08);
+
+  --signal: oklch(46% 0.1 155);
+}
+
+/* --- Fathom Coffee Roasters — specialty e-commerce ------------------------ */
+[data-demo="fathom-coffee"] {
+  color-scheme: light;
+
+  --surface: oklch(95.5% 0.014 86);
+  --surface-raised: oklch(98.5% 0.008 86);
+  --surface-sunken: oklch(91.5% 0.018 86);
+  --surface-invert: oklch(27% 0.055 255);
+
+  --ink: oklch(27% 0.055 255);
+  --ink-muted: oklch(44% 0.04 253);
+  --ink-faint: oklch(49.5% 0.032 251);
+  --ink-invert: oklch(95.5% 0.014 86);
+
+  --line: oklch(27% 0.055 255 / 0.18);
+  --line-strong: oklch(27% 0.055 255 / 0.54);
+
+  --accent: oklch(50.5% 0.122 52);
+  --accent-hover: oklch(44.5% 0.12 50);
+  --accent-contrast: oklch(97% 0.01 86);
+  --accent-soft: oklch(50.5% 0.122 52 / 0.09);
+
+  --sea-glass: oklch(72% 0.068 190);
+  --grain-opacity: 0.04;
+}

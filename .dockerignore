@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+coverage
+.git
+old
+tmp
+.tmp-review
+*.md
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
+Thumbs.db
